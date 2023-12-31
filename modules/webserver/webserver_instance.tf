@@ -38,6 +38,9 @@ resource "aws_autoscaling_group" "poc_webserver" {
     "GroupTotalInstances"
   ]
   metrics_granularity = "1Minute"
+  lifecycle {
+    ignore_changes = ["desired_capacity"]  }
+  }
 }
 
 resource "aws_autoscaling_policy" "web_policy_up" {
