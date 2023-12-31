@@ -22,7 +22,7 @@ load_balancer_output = "development-poc-lb-****.us-east-2.elb.amazonaws.com"
 ```
 Curl this url or enter it to your browser to see this output **"Hello Team This is my IP: [private IP of the webserver]"**
 Login to the AWS web console and see wheather all other resources have been properly configured. 
-Once you have gone through and verified all your resources make sure you destroy all the resources in the end using the below command.
+Once you have gone through and verified all your resources make sure you destroy all the resources in the end using the below command and entering **yes** when prompted.
 ```terraform
 terraform destroy
 ```
