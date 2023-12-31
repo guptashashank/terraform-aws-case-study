@@ -22,6 +22,10 @@ load_balancer_output = "development-poc-lb-****.us-east-2.elb.amazonaws.com"
 ```
 Curl this url or enter it to your browser to see this output **"Hello Team This is my IP: [private IP of the webserver]"**
 Login to the AWS web console and see wheather all other resources have been properly configured. 
+Once you have gone through and verified all your resources make sure you destroy all the resources in the end using the below command.
+```terraform
+terraform destroy
+```
 # Note 
 In order to login to your Webservers using **ssh** and your personal private key got to the variable.tf file of the WebServer under
 modules/webserver and place the contents of your public key in the default section of the public_key_value variable.
