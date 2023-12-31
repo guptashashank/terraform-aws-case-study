@@ -39,7 +39,7 @@ resource "aws_autoscaling_group" "poc_webserver" {
   ]
   metrics_granularity = "1Minute"
   lifecycle {
-    ignore_changes = ["desired_capacity"]  }
+    ignore_changes = [desired_capacity]  
   }
 }
 
