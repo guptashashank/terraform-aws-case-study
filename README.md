@@ -9,7 +9,7 @@ export AWS_ACCESS_KEY_ID=<<Your Access Key>>
 export AWS_SECRET_ACCESS_KEY=<<Your Secret Key>>
 ```
 Now clone this repository to your desired path in the same terminal, go into the folder terraform-aws-case-study and run the below
-commands after making sure that Terraform package is installed properly.
+commands one after the other after making sure that Terraform package is installed properly.
 ```terraform
 terraform init
 terraform plan
@@ -20,7 +20,7 @@ After successful execution of your Infrastructure As Code, you will get the load
 ```terraform
 load_balancer_output = "development-poc-lb-****.us-east-2.elb.amazonaws.com"
 ```
-Curl this url or enter it to your browser to see this output **"Hello Team This is my IP: [private IP of the webserver]"**.
+Curl this url or enter it to your browser to see this output **"Hello Team This is my IP: [private IP of the webserver]"**
 Login to the AWS web console and see wheather all other resources have been properly configured. 
 # Note 
 In order to login to your Webservers using **ssh** and your personal private key got to the variable.tf file of the WebServer under
